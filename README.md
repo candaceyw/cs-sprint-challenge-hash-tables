@@ -54,9 +54,9 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
         
 6. Various use cases for hash tables
     
-    Most important data structure, used to implement objects and dictionaries
-     over distributed computer networks. They Provide key/value storage with constant
-     time complexity for insertion, deletion, and search.
+        Most important data structure, used to implement objects and dictionaries
+        over distributed computer networks. They Provide key/value storage with constant
+        time complexity for insertion, deletion, and search.
 
 We expect you to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 

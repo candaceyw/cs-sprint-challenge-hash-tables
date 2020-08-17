@@ -5,9 +5,17 @@ def get_indices_of_item_weights(weights, length, limit):
     weight_dict = {}
 
     # Loop the range of length
-    # check if current is in dict
-        # return index and current index
+    for i in range(length):
+        cur = (limit - weights[i])
 
-    # else set current weight to current index
+        # check if current is in dict
+        if cur in weight_dict:
+            cur_index = weight_dict[cur]
+            # return index and current index
+            return i, cur_index
+
+        else:
+            # else set current weight to current index
+            weight_dict[weights[i]] = i
 
     return None
