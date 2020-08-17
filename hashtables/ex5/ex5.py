@@ -1,12 +1,15 @@
 # Your code here
 
 
-
 def finder(files, queries):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    files_dict = {}
+    result = []
+    for i in files:
+        # take file paths and split at the last forward slash /
+        split_path = i.split('/')
 
     return result
 

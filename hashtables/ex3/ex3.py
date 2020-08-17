@@ -2,9 +2,20 @@ def intersection(arrays):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    list_dict = {}
+    result = []
 
-    return result
+    for i in arrays:
+        for num in i:
+            # if num not in dict, add it.
+            if num not in list_dict:
+                list_dict[num] = 1
+            else:
+                result.append(num)
+
+    # fromkeys() will return a dictionary with the result
+    return list(dict.fromkeys(result))
+    # return result
 
 
 if __name__ == "__main__":
