@@ -23,11 +23,40 @@ Commit your code regularly and meaningfully. This practice helps both you (in ca
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your answers beforehand.
 
 1. Hashing functions
+
+        A hash function is a function where the input is any data, and the output is a number.
+        
 2. Collision resolution
+
+        When two items hash to the same slot, we must have a systematic 
+        method for placing the second item in the hash table. To mitigate 
+        this, you can also allow each slot to hold a reference to a collection (or chain) of items.
+    
 3. Performance of basic hash table operations
+
+        Once we take collisions into account, the worst caes is linear time O(n)
+        The average case is still constant time O(1) - If we handled collisions well
+        and we have a hashing function. 
+    
 4. Load factor
+
+        The load factor is a measure of how full the hash table 
+        is allowed to get before its capacity is automatically increased
+        You take the number of items stored in the hash table divided 
+        by the number of slots.
+        
 5. Automatic resizing
+    
+        When the load factor exceeds the threshold (greater than 0.7), then a new larger table 
+        is allocated. Each entry is removed from the old table and inserted in the new one.
+        Also resize is common to double the size of the has table. Resizing you must re-insert 
+        all items into the new hash table and not copy old items. 
+        
 6. Various use cases for hash tables
+    
+        Most important data structure, used to implement objects and dictionaries
+        over distributed computer networks. They Provide key/value storage with constant
+        time complexity for insertion, deletion, and search.
 
 We expect you to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -35,12 +64,12 @@ We expect you to be able to answer questions in these areas. Your responses cont
 
 ### Task 1: Project Set-Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as a collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [x] Create a forked copy of this project
+- [x] Add your team lead as a collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [x] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
 
